@@ -1,0 +1,109 @@
+:root {
+  --primary: #fd951f;
+  --background: #130f0d;
+  --text: #f0f0f5;
+  --light: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  background-color: var(--background);
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+}
+
+main form {
+  background-color: rgba(255, 255, 255, 0.05);
+
+  width: 95%;
+  max-width: 500px;
+
+  margin: 32px auto;
+  padding: 32px 64px;
+
+  border-radius: 2px;
+}
+
+form h2 {
+  margin-bottom: 2rem;
+  letter-spacing: 0.075rem;
+}
+
+form div {
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+div label {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  transition-duration: 0.25s;
+}
+
+div input,
+form button {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+div input {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.35rem 0.05rem;
+  border-bottom: 1px solid #bd6500;
+}
+
+div input:focus ~ label,
+div input:valid ~ label {
+  transform: translateY(-90%);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+form div span.active {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 0.4rem;
+  border: 1px solid #f00;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 0;
+  background-color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+
+  border-radius: 2px;
+  transition-duration: 0.5s;
+}
+
+form button:hover {
+  background-color: #ee840b;
+}

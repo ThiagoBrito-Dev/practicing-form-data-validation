@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Creating a custom form validation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h2>Entrar na lista</h2>
+
+        <div>
+          <input type="text" name="name" id="name-input" required />
+          <label for="name-input">Nome</label>
+          <span></span>
+        </div>
+        <div>
+          <input type="email" name="email" id="email-input" required />
+          <label for="email-input">E-mail</label>
+          <span></span>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
